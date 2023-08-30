@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/Guitar.png" />
+	<title>Music Concert</title>
+</head>
+
+<body>
+	<section class="section-top-page" id="home">
+		<div class="video-container">
+			<video src="./assets/images/Music-Festival.mp4" poster="./assets/images/bg-video.png" id="video"></video>
+			<div class="overlay">
+				<div class="container">
+					<header class="header">
+						<div class="header-logo">
+							<img src="assets/images/icons/Logo.svg" alt="">
+						</div>
+						<div class="header-menu">
+							<nav class="header-menu__list">
+								<ul>
+									<li><a class="header-menu__link menu-link" href="#home">home</a></li>
+
+									<li>
+										<div class="header-menu__link speakers dropdown">
+											<span class="speaker-current">speakers</span>
+											<div class="header-menu__speakers dropdown-options">
+												<div class="header-menu__speaker menu-link" href="#schedule" data-speaker="Day 01">
+													Day 01</div>
+												<div class="header-menu__speaker menu-link" href="#schedule" data-speaker="Day 02">
+													Day 02</div>
+												<div class="header-menu__speaker menu-link" href="#schedule" data-speaker="Day 03">
+													Day 03</div>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<div class="header-menu__link schedule dropdown">
+											<span class="schedule-current">schedule</span>
+											<div class="header-menu__schedules dropdown-options">
+												<div class="header-menu__schedule menu-link" href="#schedule"
+													data-schedule="Day 01">Day 01</div>
+												<div class="header-menu__schedule menu-link" href="#schedule"
+													data-schedule="Day 02">Day 02</div>
+												<div class="header-menu__schedule menu-link" href="#schedule"
+													data-schedule="Day 03">Day 03</div>
+											</div>
+										</div>
+									</li>
+
+									<li><a class="header-menu__link menu-link" href="#contacts">contact us</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header-menu__button">
+							<button class="header-button button" href="#tickets">GET TICKETS</button>
+						</div>
+					</header>
+
+					<div class="description">
+						<h1 class="description-title">The Best Experience Of <span>Music</span> In 2023</h1>
+						<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+							vitae ligula <br> placerat, eleifend ex non, vehicula libero. Suspendisse eget tellus lectus.
+						</div>
+						<div class="description-buttons">
+							<button class="description-buttons__button header-button button" href="#tickets">Get
+								Started</button>
+							<div class="description-buttons__play">
+								<img src="./assets/images/icons/play.svg" alt="">
+								<p id="watch-video">Watch Video</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="timer">
+					<div class="timer-items">
+						<div class="timer-items__item">
+							<div class="timer-items__item-value" id="days">0</div>
+							<div class="timer-items__item-info">d</div>
+						</div>
+						<div class="timer-items__item">
+							<div class="timer-items__item-value" id="hours">0</div>
+							<div class="timer-items__item-info">h</div>
+						</div>
+						<div class="timer-items__item">
+							<div class="timer-items__item-value" id="minutes">0</div>
+							<div class="timer-items__item-info">m</div>
+						</div>
+						<div class="timer-items__item">
+							<div class="timer-items__item-value" id="seconds">0</div>
+							<div class="timer-items__item-info">s</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-explore explore">
+		<h2 class="explore-title"><span>Explore</span> By Category</h2>
+		<div class="explore-items">
+			<div class="explore-item card-one">
+				<div class="explore-item__content">
+					<img src="./assets/images/icons/dj-mixer.svg" alt="image" class="explore-item__content-image">
+					<div class="explore-item__content-title">Pop</div>
+					<p class="explore-item__content-text">Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+						vitae</p>
+				</div>
+			</div>
+			<div class="explore-item card-two">
+				<div class="explore-item__content">
+					<img src="./assets/images/icons/bagpipes.svg" alt="image" class="explore-item__content-image">
+					<div class="explore-item__content-title">Folk</div>
+					<p class="explore-item__content-text">Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+						vitae</p>
+				</div>
+			</div>
+			<div class="explore-item">
+				<div class="explore-item__content card-three">
+					<img src="./assets/images/icons/saxophone.svg" alt="image" class="explore-item__content-image">
+					<div class="explore-item__content-title">Instrumental</div>
+					<p class="explore-item__content-text">Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+						vitae</p>
+				</div>
+			</div>
+			<div class="explore-item">
+				<div class="explore-item__content card-four">
+					<img src="./assets/images/icons/guitar.svg" alt="image" class="explore-item__content-image">
+					<div class="explore-item__content-title">Rock</div>
+					<p class="explore-item__content-text">Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+						vitae</p>
+				</div>
+			</div>
+			<div class="explore-item">
+				<div class="explore-item__content card-five">
+					<img src="./assets/images/icons/trumpet.svg" alt="image" class="explore-item__content-image">
+					<div class="explore-item__content-title">Jazz</div>
+					<p class="explore-item__content-text">Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate
+						vitae</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-about">
+		<div class="container">
+			<div class="about">
+				<div class="about-image">
+					<img src="./assets/images/about-background.png" alt="" class="about-image__background">
+					<img src="./assets/images/about-img.png" alt="" class="about-image__picture">
+				</div>
+				<div class="about-content">
+					<h2>About Musik</h2>
+					<p>Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc
+						non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non
+						neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis
+						iaculis. In quis massa risus</p>
+					<btn class="about-content__button button">Learn More</btn>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-singers">
+		<div class="container">
+			<div class="singers">
+				<div class="singers-content">
+					<h2>Singers</h2>
+					<p>Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc
+						non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non
+						neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis
+						iaculis. In quis massa risus</p>
+					<btn class="about-content__button button">View All Singers</btn>
+				</div>
+				<div class="singers-images">
+					<img src="./assets/images/singer-top-left.png" alt="singer" class="singers-image">
+					<img src="./assets/images/singer-top-right.png" alt="singer" class="singers-image">
+					<img src="./assets/images/singer-bottom-left.png" alt="singer" class="singers-image">
+					<img src="./assets/images/singer-bottom-right.png" alt="singer" class="singers-image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-event" id="schedule">
+		<div class="container">
+			<div class="event">
+				<h2 class="event-title">Event Schedule</h2>
+
+				<div class="event-days">
+
+					<div class="event-day active" data-day="day-01">
+						<div class="event-day__title" data-day="day-01">Day 01</div>
+						<div class="event-day__subtitle" data-day="day-01">16 August</div>
+					</div>
+
+					<div class="event-day" data-day="day-02">
+						<div class="event-day__title" data-day="day-02">Day 02</div>
+						<div class="event-day__subtitle" data-day="day-02">17 August</div>
+					</div>
+
+					<div class="event-day" data-day="day-03">
+						<div class="event-day__title" data-day="day-03">Day 03</div>
+						<div class="event-day__subtitle" data-day="day-03">18 August</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="days">
+
+				<!--Таблица первого дня. Visible-->
+				<div class="days-table opened">
+					<div class="days-table__titles">
+						<div class="days-table__title">
+							<h3>Time</h3>
+							<h3>Content</h3>
+							<h3>Speakers</h3>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>11:00 AM to 12:00 PM</p>
+						<p>Vestibulum vel eros vel metus lacinia feugiat a nec metus.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-speaker">
+								<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+								<div class="days-table__top-speaker-content">
+									<p class="days-table__top-speaker-content-name">Yui Ronald</p>
+									<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Preview</p>
+								<img src="./assets/images/icons/preview.svg" alt="icon">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="days-table__top">
+						<p>12:00 PM to 03:00 PM</p>
+						<p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel
+							vulputate vitae, fringilla id magna. Vestibulum ornare eget urna nec pulvinar. Praesent
+							porttitor convallis blandit. Fusce vel egestas dolor. Donec eu augue enim. Donec rutrum non
+							lacus ac rhoncus. Morbi quis luctus leo, nec cursus ex.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/John.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Bob John</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>3G12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Yui Ronald</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Satoshi.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Emma Satoshi</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2A35</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Live</p>
+								<img src="./assets/images/icons/live-camera.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>03:00 PM to 04:00 PM</p>
+						<p>Vestibulum vel eros vel metus lacinia feugiat a nec metus..</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/sasha-jakson.png" alt="speaker"
+										class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Sasha Jackson</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F18</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/diana-brock.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Diana Brock</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F24</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Upcoming</p>
+								<img src="./assets/images/icons/clock.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Вторая таблица скрытая-->
+				<div class="days-table ">
+					<div class="days-table__titles">
+						<div class="days-table__title">
+							<h3>Time</h3>
+							<h3>Content</h3>
+							<h3>Speakers</h3>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 AM to 00:00 PM</p>
+						<p>Add your information here.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-speaker">
+								<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+								<div class="days-table__top-speaker-content">
+									<p class="days-table__top-speaker-content-name">Singer</p>
+									<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Preview</p>
+								<img src="./assets/images/icons/preview.svg" alt="icon">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 PM to 00:00 PM</p>
+						<p>Add your information here. Add your information here. Add your information here. Add your
+							information here. Add your information here. Add your information here. Add your information
+							here.
+							Add your information here. Add your information here.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/John.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>3G12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Satoshi.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2A35</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Live</p>
+								<img src="./assets/images/icons/live-camera.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 PM to 00:00 PM</p>
+						<p>Add your information just here.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/sasha-jakson.png" alt="speaker"
+										class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F18</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/diana-brock.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F24</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Upcoming</p>
+								<img src="./assets/images/icons/clock.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Третья таблица скрытая-->
+				<div class="days-table">
+					<div class="days-table__titles">
+						<div class="days-table__title">
+							<h3>Time</h3>
+							<h3>Content</h3>
+							<h3>Speakers</h3>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 AM to 00:00 PM</p>
+						<p>Third day of your event.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-speaker">
+								<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+								<div class="days-table__top-speaker-content">
+									<p class="days-table__top-speaker-content-name">Third day singer</p>
+									<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Preview</p>
+								<img src="./assets/images/icons/preview.svg" alt="icon">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 AM to 00:00 PM</p>
+						<p>Third day of your event. Third day of your event. Third day of your event. Third day of your
+							event.
+							Third day of your event. Third day of your event. Third day of your event. Third day of your
+							event.
+							Third day of your event. Third day of your event. Third day of your event. Third day of your
+							event.
+							Third day of your event. Third day of your event. Third day of your event. </p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/John.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Third day singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>3G12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Ronald.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Third day singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F12</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/Satoshi.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Third day singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2A35</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Live</p>
+								<img src="./assets/images/icons/live-camera.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="days-table__top">
+						<p>00:00 AM to 00:00 PM</p>
+						<p>Third day of your event. Third day of your event.</p>
+
+						<div class="days-table__top-container">
+							<div class="days-table__top-block">
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/sasha-jakson.png" alt="speaker"
+										class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Third day singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F18</span></p>
+									</div>
+								</div>
+								<div class="days-table__top-speaker">
+									<img src="./assets/images/diana-brock.png" alt="speaker" class="days-table__top-speaker-img">
+									<div class="days-table__top-speaker-content">
+										<p class="days-table__top-speaker-content-name">Third day singer</p>
+										<p class="days-table__top-speaker-content-number">Booth: <span>2F24</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="days-table__top-preview">
+								<p>Upcoming</p>
+								<img src="./assets/images/icons/clock.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-tier" id="tickets">
+		<div class="container">
+			<div class="tier">
+				<h2 class="tier-title">Choose a Tier that’s right for you</h2>
+				<div class="tier-tickets">
+					<div class="tier-ticket ticket-basic">
+						<div class="tier-inner">
+							<h4 class="tier-inner__title">Basic</h4>
+							<h3 class="tier-inner__price">$100</h3>
+							<p>1 Seat Available</p>
+							<p>Access to Wifi Router</p>
+							<p>Free Food & Coffee</p>
+							<button class="tier-inner__btn button buy-button" data-value="100">Get Tickets</button>
+						</div>
+					</div>
+					<div class="tier-ticket ticket-standard">
+						<div class="tier-inner">
+							<h4 class="tier-inner__title title-standard">Standard</h4>
+							<h3 class="tier-inner__price price-standard">$150</h3>
+							<p>1 Seat Available</p>
+							<p class="access-standard">Access to Wifi Router</p>
+							<p>Free Food & Coffee</p>
+							<button class="tier-inner__btn button buy-button" data-value="150">Get Tickets</button>
+						</div>
+					</div>
+					<div class="tier-ticket ticket-premium">
+						<div class="tier-inner">
+							<h4 class="tier-inner__title title-premium">Premium</h4>
+							<h3 class="tier-inner__price price-premium">$200</h3>
+							<p>1 Seat Available</p>
+							<p class="access-premium">Access to Wifi Router</p>
+							<p class="food-premium">Free Food & Coffee</p>
+							<button class="tier-inner__btn button buy-button" data-value="200">Get Tickets</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-sponsors">
+		<div class="container">
+			<div class="sponsors">
+				<h2>Our Sponsors</h2>
+				<div class="sponsors-labels">
+					<img src="./assets/images/sponsors/google.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/microsoft.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/airbnb.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/axure.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/apple.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/fb.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/nokia.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/oracle-png.png" alt="" class="sponsors-labels__label">
+				</div>
+				<button class="sponsors-btn button">Become a Sponsor</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-testimonials">
+		<div class="testimonials">
+			<h2>Testimonials</h2>
+
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="swiper-slide__inner">
+							<p class="swiper-slide__inner-text">Lorem Ipsum is simply dummy text of the printing and
+								typesetting
+								industry. Lorem Ipsum has been
+								the
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+								type
+								and scrambled it to make a type specimen book.</p>
+
+							<img src="./assets/images/testimonials/ellie.png" alt="Avatar">
+							<p class="swiper-slide__name">Johnny Doe</p>
+							<a href="#">ipsum.com</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__inner">
+							<p class="swiper-slide__inner-text">Lorem Ipsum is simply dummy text of the printing and
+								typesetting
+								industry. Lorem Ipsum has been
+								the
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+								type
+								and scrambled it to make a type specimen book.</p>
+							<img src="./assets/images/testimonials/johnny.png" alt="Avatar">
+							<p class="swiper-slide__name">Johnny Doe</p>
+							<a href="#">ipsum.com</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__inner">
+							<p class="swiper-slide__inner-text">Lorem Ipsum is simply dummy text of the printing and
+								typesetting
+								industry. Lorem Ipsum has been
+								the
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+								type
+								and scrambled it to make a type specimen book.</p>
+							<img src="./assets/images/testimonials/myne.png" alt="Avatar">
+							<p class="swiper-slide__name">Johnny Doe</p>
+							<a href="#">ipsum.com</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__inner">
+							<p class="swiper-slide__inner-text">Lorem Ipsum is simply dummy text of the printing and
+								typesetting
+								industry. Lorem Ipsum has been
+								the
+								industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+								type
+								and scrambled it to make a type specimen book.</p>
+							<img src="./assets/images/testimonials/myne.png" alt="Avatar">
+							<p class="swiper-slide__name">Johnny Doe</p>
+							<a href="#">ipsum.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-shots">
+		<div class="shots">
+			<div class="shots-inner">
+				<h2>See our Best Shots</h2>
+				<div class="slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/1.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/2.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/3.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/4.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/5.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/6.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/7.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/8.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/8.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/images/shots/7.png" alt="image" class="swiper-slide__img">
+							<div class="swiper-slide-block">
+								<div class="swiper-slide-block__likes">
+									<img src="./assets/images/shots/heart.svg" alt="icon" class="swiper-slide-block__likes-img">
+									<p class="swiper-slide-block__likes-num">412</p>
+								</div>
+								<div class="swiper-slide-block__chat">
+									<img src="./assets/images/shots/chat.svg" alt="icon" class="swiper-slide-block__chat-img">
+									<p class="swiper-slide-block__chat-num">140</p>
+								</div>
+							</div>
+							<p class="swiper-slide__text">Lorem Ipsum Amet</p>
+							<div class="swiper-slide__tags">
+								<a href="#">#music</a>
+								<a href="#">#concert </a>
+								<a href="#">#conference </a>
+								<a href="#">#london </a>
+								<a href="#">#event </a>
+								<a href="#">#artist </a>
+								<a href="#">#soundtrack </a>
+								<a href="#">#dance </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+	</section>
+
+	<section class="section-contacts" id="contacts">
+
+		<div class="contacts">
+
+			<div class="contacts-contacts">
+				<div class="contacts-contacts-inner">
+					<h2>Contact us</h2>
+					<p>Have an inquiry? We’ll be happy to assist you</p>
+					<div class="contacts-contacts-inner__tel">
+						<img src="./assets/images/contacts/phone.svg" alt="icon">
+						<a href="tel:">+92 333 6527366</a>
+					</div>
+					<div class="contacts-contacts-inner__mail">
+						<img src="./assets/images/contacts/email.svg" alt="icon">
+						<a href="mailto:">abuzer@greelogix.com</a>
+					</div>
+					<div class="contacts-contacts-inner__adress">
+						<img src="./assets/images/contacts/map.svg" alt="icon">
+						<a href="https://maps.google.com?q=123+Main+St,Cityville,Country" target="_blank">Plot 252, Block L
+							Phase
+							2 Johar Town,
+							Lahore, PK</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="contacts-form">
+				<div class="contacts-form-inner">
+					<h2>Fill in your details</h2>
+					<form action="#" class="contacts-form-inner__form">
+						<div class="contacts-form-inner__form-item">
+							<label for="name">Name</label>
+							<input type="text" class="contacts-form-inner__form-item-name" id="name" required
+								placeholder="enter your name">
+						</div>
+						<div class="contacts-form-inner__form-item">
+							<label for="email">Email</label>
+							<input type="text" class="contacts-form-inner__form-item-email" id="email" required
+								placeholder="enter your email">
+						</div>
+						<div class="contacts-form-inner__form-item">
+							<label for="message">Message</label>
+							<input type="text" class="contacts-form-inner__form-item-message" id="message" required
+								placeholder="enter your message">
+						</div>
+						<button type="submit" class="contacts-form-inner__form-submit button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-footer">
+		<footer>
+			<div class="container">
+				<div class="footer">
+					<img src="./assets/images/footer/logo.svg" alt="Logo" class="footer-logo">
+					<div class="footer-inner">
+
+						<div class="footer-menu">
+							<nav class="footer-menu__list">
+								<ul>
+									<li><a class="footer-menu__link" href="#home">home</a></li>
+									<li><a class="footer-menu__link" href="#">Company</a></li>
+									<li><a class="footer-menu__link" href="#">Blog</a></li>
+									<li><a class="footer-menu__link" href="#contacts">contact us</a></li>
+									<li><a class="footer-menu__link" href="#">sitemap</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer-icons">
+							<a href="https://www.facebook.com/" target="_blank"><img class="footer-icon"
+									src="./assets/images/footer/facebook.svg" alt="icon"></a>
+							<a href="https://twitter.com/" target="_blank"><img class="footer-icon"
+									src="./assets/images/footer/twitter.svg" alt="icon"></a>
+							<a href="https://linkedin.com/" target="_blank"><img class="footer-icon"
+									src="./assets/images/footer/linkedin.svg" alt="icon"></a>
+							<a href="https://instagram.com/" target="_blank"><img class="footer-icon"
+									src="./assets/images/footer/instagram.svg" alt="icon"></a>
+						</div>
+
+						<div class="footer-auther">
+							© Lyakhov, 2023
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+
+
+
+
+	<!--Модальное окно-->
+	<div class="modal">
+		<div class="modal-wrapper">
+			<div class="modal-title">The Best Experience Of Music 2023</div>
+			<div class="modal-version"></div>
+
+			<form class="form">
+				<div class="form-group">
+					<label for="card">Amount of tickets You need:</label>
+					<input class="btn-input" type="text" required placeholder="0" id="ticket" />
+					<button class="btn-add button">Add</button>
+				</div>
+
+				<div class="form-group full">
+					<label for="card">Bank Card:</label>
+					<input type="text" required placeholder="0000 0000 0000 0000" id="card" />
+				</div>
+
+				<div class="form-group">
+					<label for="expire">Expire date:</label>
+					<input type="text" required placeholder="mm/yy" id="expire" />
+				</div>
+
+				<div class="form-group">
+					<label for="ccv">ccv:</label>
+					<input type="text" required placeholder="***" id="ccv" />
+				</div>
+
+				<div class="form-group full">
+					<label for="instant">INSTANT:</label>
+					<input type="text" required placeholder="John Doe" id="instant" />
+				</div>
+
+				<div class="form-checkbox flex flex-center">
+					<input type="checkbox" name="agreement" id="agreement" required />
+					<span class="check"></span>
+					<label for="agreement">
+						I agree with the <span class="red">rules</span> of the site
+					</label>
+				</div>
+
+				<div class="modal-description">
+					Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc
+					non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non neque
+					suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis iaculis.
+				</div>
+
+				<div class="modal-total flex flex-center">
+					<div class="modal-total__text">YOUR TOTAL SUM:</div>
+					<div class="modal-total__price"></div>
+				</div>
+
+				<button type="submit" class="modal-submit button">buy NOW</button>
+			</form>
+
+			<div class="modal-close">x</div>
+		</div>
+	</div>
+</body>
+
+</html>
