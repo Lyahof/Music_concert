@@ -86,28 +86,27 @@ const startTimer = (date) => {
 	}, 1000);
 };
 
-startTimer("December 30, 2023 00:00:00");
+startTimer("December 30, 2024 00:00:00");
 
 
 //видео
 
-const description = document.querySelector('.description')
-let watchVideo = document.getElementById('watch-video')
-const video = document.getElementById('video')
-const videoButton = document.querySelector('.description-buttons__play')
-const poster = document.getElementById('poster'); // Новый элемент с постером
+const description = document.querySelector('.description');
+let watchVideo = document.getElementById('watch-video');
+const video = document.getElementById('video');
+const videoButton = document.querySelector('.description-buttons__play');
 let isPlay = false;
 
-const handleVideo = (event) => {
-
+function handleVideo () {
 	isPlay = !isPlay;
-	description.style.visibility = isPlay ? "hidden" : "visible"
-	watchVideo.innerText = isPlay ? "Stop" : "Watch Video";
-	videoButton.style.visibility = "visible"
-	isPlay ? video.play() : video.pause();
+	isPlay ? video.play() : video.load();
+
+	description.style.visibility = isPlay ? "hidden" : "visible";
+	watchVideo.innerText = isPlay ? "Stop Video" : "Play Video";
+	videoButton.style.visibility = "visible";
 }
 
-videoButton.addEventListener('click', handleVideo)
+videoButton.addEventListener('click', handleVideo);
 
 
 //=============== Переключение дней в Event Schedule
@@ -132,25 +131,34 @@ eventDays.forEach((eventDay, index) => {
 const buyButton = document.querySelectorAll(".buy-button");
 const modal = document.querySelector('.modal')
 const modalClose = document.querySelector('.modal-close')
-let numberOfTickets = document.getElementById('ticket')
-let totalSum = document.querySelector('.modal-total__text')
+const numberOfTickets = document.getElementById('ticket')
+const totalSum = document.querySelector('.modal-total__text')
 const btnAdd = document.querySelector('.btn-add')
 
-const handleBuyButton = (event) => {
+function handleBuyButton (e) {
 
 	modal.classList.add('opened');
-	const ticketValue = +event.target.dataset.value;
+	const ticketValue = Number(e.target.dataset.value);
 
 	btnAdd.addEventListener('click', function () {
-		let ticketNumber = +numberOfTickets.value;
-		let sum = ticketNumber * ticketValue;
+		const ticketNumber = Number(numberOfTickets.value);
+		const sum = ticketNumber * ticketValue;
 		totalSum.innerHTML = `YOUR TOTAL SUM: ${sum} $`;
 	})
 }
 
-modalClose.addEventListener('click', function () {
+buyButton.forEach((btn) => btn.addEventListener('click', handleBuyButton));
+
+function closeModal(){
 	modal.classList.remove('opened')
 	numberOfTickets.value = '';
 	totalSum.innerHTML = `YOUR TOTAL SUM:`;
-})
-buyButton.forEach((btn) => btn.addEventListener('click', handleBuyButton));
+}
+
+modalClose.addEventListener('click', closeModal)
+
+ document.addEventListener('click', (e) => {
+	if (!e.target.closest('.modal-wrapper') && modal.classList.contains('opened')) {
+		 closeModal();
+	}
+}, true); 
