@@ -10,7 +10,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 Swiper.use([Navigation]);
 
 
-//Перемещение по якорям
+//================= Перемещение по якорям
 
 const menuLink = document.querySelectorAll('.menu-link')
 const buttons = document.querySelectorAll('.header-button')
@@ -27,7 +27,7 @@ menuLink.forEach((link) => link.addEventListener('click', scrollToSection));
 buttons.forEach((button) => button.addEventListener('click', scrollToSection));
 
 
-// Слайдер Testimonials
+//================ Слайдер Testimonials
 const swiper = new Swiper('.swiper', {
 
 	direction: 'horizontal',
@@ -39,7 +39,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-// Слайдер Instagram
+//================= Слайдер Instagram
 const slider = new Swiper('.slider', {
 
 	direction: 'horizontal',
@@ -55,7 +55,7 @@ const slider = new Swiper('.slider', {
 });
 
 
-//Таймер
+//============= Таймер
 
 const formatValue = (value) => (value < 10 ? `0${value}` : value);
 
@@ -89,7 +89,7 @@ const startTimer = (date) => {
 startTimer("December 30, 2024 00:00:00");
 
 
-//видео
+//============ Видео
 
 const description = document.querySelector('.description');
 let watchVideo = document.getElementById('watch-video');
@@ -128,16 +128,18 @@ eventDays.forEach((eventDay, index) => {
 
 //=============== Модальное окно покупки билетов
 
-const buyButton = document.querySelectorAll(".buy-button");
+const buyButton = document.querySelectorAll('.buy-button');
 const modal = document.querySelector('.modal')
+const overlay = document.querySelector('.overlay--modal')
 const modalClose = document.querySelector('.modal-close')
 const numberOfTickets = document.getElementById('ticket')
 const totalSum = document.querySelector('.modal-total__text')
 const btnAdd = document.querySelector('.btn-add')
 
 function handleBuyButton (e) {
-
 	modal.classList.add('opened');
+	overlay.classList.add('opened');
+	
 	const ticketValue = Number(e.target.dataset.value);
 
 	btnAdd.addEventListener('click', function () {
@@ -150,7 +152,8 @@ function handleBuyButton (e) {
 buyButton.forEach((btn) => btn.addEventListener('click', handleBuyButton));
 
 function closeModal(){
-	modal.classList.remove('opened')
+	overlay.classList.remove('opened');
+	modal.classList.remove('opened');
 	numberOfTickets.value = '';
 	totalSum.innerHTML = `YOUR TOTAL SUM:`;
 }
