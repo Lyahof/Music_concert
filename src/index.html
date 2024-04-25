@@ -11,6 +11,7 @@
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@400;700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/Guitar.png" />
+	<!-- <link rel="stylesheet" href="assets/styles/queries.css"/> -->
 	<title>Music Concert</title>
 </head>
 
@@ -22,7 +23,7 @@
 				<div class="container">
 					<header class="header">
 						<div class="header-logo">
-							<img src="assets/images/icons/Logo.svg" alt="">
+							<img src="assets/images/icons/Logo.svg" alt="Logo">
 						</div>
 						<div class="header-menu">
 							<nav class="header-menu__list">
@@ -62,7 +63,7 @@
 							</nav>
 						</div>
 						<div class="header-menu__button">
-							<button class="header-button button" href="#tickets">GET TICKETS</button>
+							<button class="header-button button menu-link" href="#tickets">GET TICKETS</button>
 						</div>
 					</header>
 
@@ -72,14 +73,9 @@
 							vitae ligula <br> placerat, eleifend ex non, vehicula libero. Suspendisse eget tellus lectus.
 						</div>
 						<div class="description-buttons">
-							<button class="description-buttons__button header-button button" href="#tickets">Get
+							<button class="description-buttons__button button menu-link" href="#tickets">Get
 								Started</button>
-							<!-- <div class="description-buttons__play">
-								<img src="./assets/images/icons/play.svg" alt="play-button" id="play-button">
-								<p id="watch-video">Watch Video</p>
-							</div> -->
 							<button class="description-buttons__play" id="watch-video">
-								<!-- <img src="./assets/images/icons/play.svg" alt="play-button" id="play-button"> -->
 								Play Video
 							</button>
 						</div>
@@ -160,8 +156,8 @@
 		<div class="container">
 			<div class="about">
 				<div class="about-image">
-					<img src="./assets/images/about-background.png" alt="" class="about-image__background">
-					<img src="./assets/images/about-img.png" alt="" class="about-image__picture">
+					<img src="./assets/images/about-background.png" alt="music fans" class="about-image__background">
+					<img src="./assets/images/about-img.png" alt="music fans" class="about-image__picture">
 				</div>
 				<div class="about-content">
 					<h2>About Musik</h2>
@@ -169,7 +165,7 @@
 						non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non
 						neque suscipit luctus. Mauris et erat id ipsum condimentum cursus. Sed tempus enim non massa mattis
 						iaculis. In quis massa risus</p>
-					<btn class="about-content__button button">Learn More</btn>
+					<btn class="about-content__button button menu-link" href="#schedule">Learn More</btn>
 				</div>
 			</div>
 		</div>
@@ -315,7 +311,7 @@
 							</div>
 							<div class="days-table__top-preview">
 								<p>Upcoming</p>
-								<img src="./assets/images/icons/clock.svg" alt="">
+								<img src="./assets/images/icons/clock.svg" alt="clocks">
 							</div>
 						</div>
 					</div>
@@ -413,7 +409,7 @@
 							</div>
 							<div class="days-table__top-preview">
 								<p>Upcoming</p>
-								<img src="./assets/images/icons/clock.svg" alt="">
+								<img src="./assets/images/icons/clock.svg" alt="clocks">
 							</div>
 						</div>
 					</div>
@@ -485,7 +481,7 @@
 							</div>
 							<div class="days-table__top-preview">
 								<p>Live</p>
-								<img src="./assets/images/icons/live-camera.svg" alt="">
+								<img src="./assets/images/icons/live-camera.svg" alt="live-camera">
 							</div>
 						</div>
 					</div>
@@ -514,7 +510,7 @@
 							</div>
 							<div class="days-table__top-preview">
 								<p>Upcoming</p>
-								<img src="./assets/images/icons/clock.svg" alt="">
+								<img src="./assets/images/icons/clock.svg" alt="clocks">
 							</div>
 						</div>
 					</div>
@@ -568,14 +564,14 @@
 			<div class="sponsors">
 				<h2>Our Sponsors</h2>
 				<div class="sponsors-labels">
-					<img src="./assets/images/sponsors/google.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/microsoft.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/airbnb.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/axure.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/apple.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/fb.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/nokia.png" alt="" class="sponsors-labels__label">
-					<img src="./assets/images/sponsors/oracle-png.png" alt="" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/google.png" alt="google" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/microsoft.png" alt="microsoft" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/airbnb.png" alt="airbnb" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/axure.png" alt="axure" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/apple.png" alt="apple" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/fb.png" alt="fb" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/nokia.png" alt="nokia" class="sponsors-labels__label">
+					<img src="./assets/images/sponsors/oracle-png.png" alt="oracle" class="sponsors-labels__label">
 				</div>
 				<button class="sponsors-btn button">Become a Sponsor</button>
 			</div>
@@ -656,7 +652,7 @@
 		<div class="shots">
 			<div class="shots-inner">
 				<h2>See our Best Shots</h2>
-				<div class="slider">
+				<div class="slider swiper">
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
 						<!-- Slides -->
@@ -970,11 +966,11 @@
 						<div class="footer-menu">
 							<nav class="footer-menu__list">
 								<ul>
-									<li><a class="footer-menu__link" href="#home">home</a></li>
-									<li><a class="footer-menu__link" href="#">Company</a></li>
+									<li><a class="footer-menu__link menu-link" href="#home">home</a></li>
+									<li><a class="footer-menu__link menu-link" href="#contacts">Company</a></li>
 									<li><a class="footer-menu__link" href="#">Blog</a></li>
-									<li><a class="footer-menu__link" href="#contacts">contact us</a></li>
-									<li><a class="footer-menu__link" href="#">sitemap</a></li>
+									<li><a class="footer-menu__link menu-link" href="#contacts">contact us</a></li>
+									<li><a class="footer-menu__link menu-link" href="#">sitemap</a></li>
 								</ul>
 							</nav>
 						</div>

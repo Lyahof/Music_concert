@@ -149,7 +149,7 @@ body {
 .video-container {
 	position: relative;
 	width: 100%;
-	height: 0;
+	height: 100%;
 	padding-bottom: 50.35%;
 }
 
@@ -233,7 +233,7 @@ body {
 
 	&-items {
 		display: flex;
-		column-gap: 10rem;
+		column-gap: 6rem;
 		justify-content: center;
 
 		&__item {
@@ -242,7 +242,7 @@ body {
 
 			&-value,
 			&-info {
-				font-size: 14.4rem;
+				font-size: 9rem;
 				font-weight: 700;
 				-webkit-text-fill-color: transparent;
 				-webkit-text-stroke: 2px #a09797;
@@ -1031,21 +1031,20 @@ body {
 	}
 }
 
+// Instagram slider
+
 .slider {
 
 	.swiper-wrapper {
 		display: flex;
 		column-gap: 3rem;
+		align-items: center;
 	}
 
 	.swiper-slide {
-		min-width: 37rem;
-
-		&__img {
-			margin-bottom: 2.4rem;
-		}
 
 		&-block {
+			margin-top: 2.2rem;
 			cursor: default;
 			display: flex;
 			column-gap: 4rem;
@@ -1097,7 +1096,7 @@ body {
 		height: 5rem !important;
 		display: inline-block;
 		left: 10%;
-		top: 55%;
+		top: 36%;
 		background-color: #FFF;
 		border-radius: 50%;
 
@@ -1117,7 +1116,7 @@ body {
 		height: 5rem !important;
 		display: inline-block;
 		right: 10%;
-		top: 55%;
+		top: 36%;
 		background-color: #FFF;
 		border-radius: 50%;
 

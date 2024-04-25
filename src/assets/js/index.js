@@ -10,24 +10,29 @@ import { Navigation, Pagination } from 'swiper/modules';
 Swiper.use([Navigation]);
 
 
-//================= Перемещение по якорям
+//================= Smooth scroll
 
-const menuLink = document.querySelectorAll('.menu-link')
-const buttons = document.querySelectorAll('.header-button')
+const menuLink = document.querySelectorAll('.menu-link');
 
-const scrollToSection = (event) => {
+menuLink.forEach(function(link){
+	link.addEventListener('click', function(e){
+		e.preventDefault();
+		const href = link.getAttribute('href');
 
-	event.preventDefault();
-	const href = event.currentTarget.getAttribute("href").slice(1);
-	const top = document.getElementById(href)?.offsetTop || 0;
-	window.scrollTo({ top, behavior: "smooth" });
-}
+		if (href === '#')
+			window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		})
 
-menuLink.forEach((link) => link.addEventListener('click', scrollToSection));
-buttons.forEach((button) => button.addEventListener('click', scrollToSection));
+		if (href !== '#' && href.startsWith('#')){
+			const sectionEl = document.querySelector(href);
+			sectionEl.scrollIntoView({behavior: 'smooth'})
+		}
+	})
+})
 
-
-//================ Слайдер Testimonials
+//================ Slider Testimonials
 const swiper = new Swiper('.swiper', {
 
 	direction: 'horizontal',
@@ -39,14 +44,14 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-//================= Слайдер Instagram
+//================= Slider Instagram
 const slider = new Swiper('.slider', {
 
 	direction: 'horizontal',
 	loop: true,
-	slidesPerView: 4.5,
+	slidesPerView: 5,
 	centeredSlides: true,
-	initialSlide: 3,
+	initialSlide: 2,
 
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -55,7 +60,7 @@ const slider = new Swiper('.slider', {
 });
 
 
-//============= Таймер
+//============= Timer
 
 const formatValue = (value) => (value < 10 ? `0${value}` : value);
 
@@ -89,7 +94,7 @@ const startTimer = (date) => {
 startTimer("December 30, 2024 00:00:00");
 
 
-//============ Видео
+//============ Video
 
 const description = document.querySelector('.description');
 let watchVideo = document.getElementById('watch-video');
@@ -109,7 +114,7 @@ function handleVideo () {
 videoButton.addEventListener('click', handleVideo);
 
 
-//=============== Переключение дней в Event Schedule
+//=============== Switching days in Event Schedule section
 
 const eventDays = document.querySelectorAll('.event-day');
 const eventDaysContainer = document.querySelectorAll('.days-table');
@@ -126,7 +131,7 @@ eventDays.forEach((eventDay, index) => {
 });
 
 
-//=============== Модальное окно покупки билетов
+//=============== Modal window for buying tickets
 
 const buyButton = document.querySelectorAll('.buy-button');
 const modal = document.querySelector('.modal')
